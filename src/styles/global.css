@@ -1,0 +1,151 @@
+:root {
+    --black: #222;
+    --gray: #555;
+    --white: #fff;
+    --primary: #940303;
+    --primary-lighter: #b50303;
+    --primary-lightest: #f08989;
+    --accent: rgb(8, 60, 201);
+    --text-highlight: rgb(238, 238, 238);
+
+    /* Overwrite code highlighting CSS variables */
+    --deckgo-highlight-code-token-comment: #919cbf;
+    --deckgo-highlight-code-token-punctuation: #6cc5f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: var(--black);
+    /* Defaulting to the system font of a particular operating system can boost performance
+       because the browser doesn’t have to download any font files, it’s using one it already had.
+       See: https://css-tricks.com/snippets/css/system-font-stack/ */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+        sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary);
+    letter-spacing: 1.1;
+    font-weight: bold;
+    margin: 1em 0 0.25em;
+}
+h1 {
+    border-left: 0.65rem solid var(--primary-lightest);
+    font-size: 1.75rem;
+    padding-left: 0.5em;
+}
+h2 {
+    font-size: 1.25rem;
+}
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0.5em 0 1em;
+}
+
+hr {
+    border: none;
+    border-radius: 30%;
+    background: linear-gradient(
+        90deg,
+        var(--primary-lighter) 0%,
+        var(--primary) 50%,
+        var(--primary-lighter) 100%
+    );
+    height: 3px;
+    margin: 1.5rem 0 0;
+}
+
+a {
+    color: var(--accent);
+}
+a:focus {
+    outline: 2px solid var(--black);
+    outline-offset: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* List styling */
+ul,
+ol {
+    margin: 0.5em 0 1em;
+}
+ul li,
+ol li {
+    margin: 0.5em 0;
+}
+ul li p,
+ol li p {
+    /* Remove margin of p-Tags created by MDX syntax */
+    margin: 0;
+}
+ul li::marker,
+ol li::marker {
+    color: var(--primary);
+}
+
+blockquote {
+    background: var(--text-highlight);
+    border-left: 0.65rem solid #777;
+    font-style: italic;
+    margin: 0;
+    padding: 1rem;
+}
+/* Default markdown blockquotes contain a paragraph tag */
+blockquote p {
+    margin: 0;
+}
+
+iframe {
+    border: 2px solid var(--black);
+    height: min(30rem, 90vh);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style blog post images */
+span.gatsby-resp-image-wrapper img {
+    border: solid 0.15rem var(--black);
+    border-radius: 0.3rem;
+}
+
+/* Style blog post image captions */
+span.gatsby-resp-image-wrapper + em {
+    color: var(--black);
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}

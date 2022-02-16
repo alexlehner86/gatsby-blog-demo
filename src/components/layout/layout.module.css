@@ -1,0 +1,51 @@
+.header {
+    background: linear-gradient(90deg, var(--primary-lighter) 0%, var(--primary) 100%);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.75);
+}
+
+.header h1 {
+    color: inherit;
+}
+
+.header > a {
+    color: inherit;
+}
+.header > a:focus {
+    outline: none;
+}
+.header > a:focus-visible {
+    outline: 4px solid white;
+    outline-offset: 2px;
+}
+.header > a > svg {
+    max-width: 85vw;
+    height: auto;
+}
+
+.header nav a {
+    color: inherit;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.header nav a:focus,
+.header nav a:hover {
+    background: var(--white);
+    color: var(--black);
+    outline: none;
+}
+
+.content {
+    max-width: 58ch;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+}

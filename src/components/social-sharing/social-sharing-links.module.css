@@ -1,0 +1,37 @@
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.link-container a {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0.5rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.link-container a:focus,
+.link-container a:hover {
+    color: var(--accent);
+    transform: scale(1.2);
+}
+
+.link-container a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.link-container a svg {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 25rem) {
+    .link-container {
+        gap: 0.5rem;
+    }
+}

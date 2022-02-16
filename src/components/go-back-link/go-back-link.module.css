@@ -1,0 +1,7 @@
+.go-back-link-container {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+    padding: 0.5em 0 0.6em;
+}

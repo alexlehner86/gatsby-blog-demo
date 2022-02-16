@@ -1,0 +1,21 @@
+.date-top,
+.date-bottom {
+    font-size: 0.9rem;
+}
+
+.date-top {
+    border-bottom: 1px solid currentColor;
+    margin: 0 0 1em;
+    padding: 0 0 0.25em;
+}
+
+.date-bottom {
+    margin: 0;
+    padding: 0;
+}
+
+.top-line {
+    border-top: 1px solid var(--primary);
+    width: 2rem;
+    margin: 2rem 0 0.25rem;
+}

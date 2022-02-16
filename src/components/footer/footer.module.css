@@ -1,0 +1,13 @@
+.footer {
+    max-width: 58ch;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer p {
+    color: var(--gray);
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 1.5rem 0;
+    text-align: center;
+}

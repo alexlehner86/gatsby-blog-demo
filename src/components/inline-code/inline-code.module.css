@@ -1,0 +1,9 @@
+.inline-code {
+    background: var(--text-highlight);
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    padding: 0.2em 0.4em;
+    vertical-align: middle;
+}

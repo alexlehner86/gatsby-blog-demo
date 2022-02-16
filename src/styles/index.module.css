@@ -1,0 +1,24 @@
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper [data-gatsby-image-wrapper] {
+    border: 0.3rem solid var(--black);
+    border-radius: 50%;
+}
+
+ul.blog-posts {
+    margin-right: 1rem;
+}
+ul.blog-posts li:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+ul.blog-posts a[href] {
+    margin-right: 0.2em;
+}
+ul.blog-posts span.secondary-info {
+    font-size: 0.8em;
+    white-space: nowrap;
+}
