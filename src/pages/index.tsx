@@ -1,6 +1,5 @@
 import dayjs from 'dayjs';
 import { graphql, useStaticQuery } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import { LocalizedLink, useLocalization } from 'gatsby-theme-i18n';
 import * as React from 'react';
 
@@ -10,7 +9,7 @@ import Layout from '../components/layout/layout';
 import { DATETIME_VALID_DATE_STRING_FORMAT } from '../const/app.const';
 import { InternationalizationConfig } from '../model/i18n-config.interface';
 import { MdxBlogPostQueryResult } from '../model/mdx-post-metadata.interface';
-import { blogPosts, imageWrapper, secondaryInfo } from '../styles/index.module.css';
+import { blogPosts, secondaryInfo } from '../styles/index.module.css';
 import { getRelativePath } from '../utils/app.utils';
 
 export default function IndexPage() {
@@ -36,9 +35,6 @@ export default function IndexPage() {
     `);
     // Only show posts for the current locale (English or German)
     const posts = data.allMdx.nodes.filter(node => node.fields.locale === locale);
-    const altText = locale === 'en'
-        ? 'Alexander Lehner on a bridge over the Danube channel in Vienna'
-        : 'Alexander Lehner auf einer Brücke über dem Donaukanal in Wien';
     // This is necessary so that static html file created with static site generation includes correct meta data.
     const relativePath = getRelativePath(locale, '/');
 

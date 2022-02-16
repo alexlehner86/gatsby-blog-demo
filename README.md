@@ -9,6 +9,7 @@ The main configuration is done in the gatsby-config.js file. Blog posts are crea
 ## Features
 
 - Conversion of MDX files into static sites via [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/) and the [gatsby-plugin-page-creator](https://www.gatsbyjs.com/plugins/gatsby-plugin-page-creator/).
+- Internationalization via [gatsby-theme-i18n](https://www.gatsbyjs.com/plugins/gatsby-theme-i18n/).
 - SEO optimization via [gatsby-plugin-react-helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/).
 - Image optimization via [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/).
-- Internationalization via [gatsby-theme-i18n](https://www.gatsbyjs.com/plugins/gatsby-theme-i18n/).
+- Code highlighting via [gatsby-remark-highlight-code](https://www.gatsbyjs.com/plugins/gatsby-remark-highlight-code/) and [@deckdeckgo/highlight-code](https://www.npmjs.com/package/@deckdeckgo/highlight-code).
